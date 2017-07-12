@@ -40,6 +40,7 @@ slug: getting_started
   <img src="images/Architecture_Overview.png" style="width:50%;">
   
         <h3 id="Audience" class="page-header">Audience</h3>
+  
            <p> The UI Layer provides User Interface to view and interact with the configured DevOps Tools. 
              The Hygieia dashboard requires installation of: </p>
               <ul>
@@ -48,6 +49,14 @@ slug: getting_started
                 <li> gulp </li>
                 <li> bower </li>
               </ul>
+  
+  <h3 id="api_layer" class="page-header">API Layer</h3>
+  
+  <p> The API Layer contains all common REST API services that work with source data system data, 
+  which has already been collected by other service tasks. This is an abstraction from the local data layer, 
+  and the source system data layer.
+  All REST controllers should be generic to their purpose, and should not be specific to any given source system. </p>
+  
   
   
   <!--End Test Content-->
