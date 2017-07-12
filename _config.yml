@@ -6,3 +6,5 @@ download:
   source:         https://github.com/capitalone/hygieia/archive/master.zip
 
 
+
+theme: jekyll-theme-slate
