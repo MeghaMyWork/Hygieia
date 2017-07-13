@@ -35,7 +35,7 @@ slug: getting_started
     position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Architecture Overview
   </h2>
   
-  <p> The following diagram gives an overview of the Hygieia Architecture:</p>
+  <p> The following diagram gives an overview of Hygieia Architecture:</p>
   
   <img src="images/Architecture_Overview.png" style="width:50%;">
   
@@ -56,6 +56,11 @@ slug: getting_started
   which has already been collected by other service tasks. This is an abstraction from the local data layer, 
   and the source system data layer.
   All REST controllers should be generic to their purpose, and should not be specific to any given source system. </p>
+  
+  <h3 id="collectors_layer" class="page-header">Collectors Layer</h3>
+  <p> Hygieia uses Spring Boot to package the collector as an executable JAR with dependencies. </p>
+  <p> Hygieia supports the following Collectors inventory:</p>
+  
   
   
   
