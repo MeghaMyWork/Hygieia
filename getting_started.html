@@ -59,9 +59,15 @@ slug: getting_started
   
         <h3 id="overview" class="page-header">Overview</h3>
   
-          <p> Hygieia is single, configurable, easy-to-use dashboard to visualize near real-time status 
-    of the entire delivery pipeline. In addition, it provides a continuous feedback loop for any DevOps organization.</p>
-          <p> To know more about Hygieia, watch the demo video here: </p>
+          <p> Hygieia is a single, configurable, easy-to-use dashboard to visualize near real-time status 
+            of the entire delivery pipeline. In addition, it provides a continuous feedback loop for any DevOps organization. 
+            Hygieia dashboards assist in achieving process transparency and therefore help establish feedback loops 
+            that are the underlying concept of lean and DevOps. 
+            They contain interactive elements which enable drill-down and linking to the connected tools.</p>
+          <p>Hygieia dashboards are customizable: you can select your story tracking tools, code repository, 
+            users can select VersionOne or Jira for story tracking, Subversion or GitHub as repositories, 
+            Jenkins/Hudson for builds, Selenium and SonarQube for quality, uDeploy and Jenkins for deployment. 
+            More plugins are available.  </p>
   
         <h3 id="audience" class="page-header">Audience</h3>
   
@@ -102,9 +108,54 @@ slug: getting_started
   <h3 id="collectors_layer" class="page-header">Collectors Layer</h3>
   <p> Hygieia uses Spring Boot to package the collector as an executable JAR with dependencies. </p>
   <p> Hygieia supports the following Collectors inventory:</p>
-  
-  
-  
+  <ul>
+                <li>Feature Management Collectors</li>
+                  <ul>
+                    <li>VersionOne</li>
+                    <li>Jira</li>
+
+                  </ul>
+                </li>
+                <li>SCM Collectors</li>
+                  <ul>
+                    <li>GitHub</li>
+                    <li>GitLab</li>
+                    <li>Subversion</li>
+                    <li>Bitbucket</li>
+                  </ul>
+                </li>
+                <li>Deploy Collectors</li>
+                  <ul>
+                    <li>Bamboo</li>
+                    <li>Jenkins</li>
+                    <li>Jenkins Cucumber</li>
+                    <li>Sonar</li>
+                  </ul>
+                </li>
+                <li>Cloud Collectors
+                  <ul>
+                    <li>AWS</a></li>
+                  </ul>
+                </li>
+                <li>Communication Collectors</li>
+                  <ul>
+                    <li>Chat Ops</li>
+                  </ul>
+                </li>
+                <li>Deployment Collectors
+                  <ul>
+                    <li>uDeploy</li>
+                    <li>XLDeploy</li>
+                  </ul>
+                </li>
+              </ul>
+              <p>You can pick and choose which collectors are applicable 
+                for your DevOps toolset or you can write your own collector and plug it in.</p>
+
+<h3 id="db_layer" class="page-header">Database Layer</h3>  
+<p>Hygieia uses MongoDB as the database for storage and retrieval of data.</p>
+
+
   
   <!--End New Content-->
   
