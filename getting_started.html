@@ -64,7 +64,7 @@ slug: getting_started
             Hygieia dashboards assist in achieving process transparency and therefore help establish feedback loops 
             that are the underlying concept of lean and DevOps. 
             They contain interactive elements which enable drill-down and linking to the connected tools.</p>
-          <p>Hygieia dashboards are customizable: you can select your story tracking tools, code repository, 
+          <p> Hygieia dashboards are customizable: you can select your story tracking tools, code repository, 
             users can select VersionOne or Jira for story tracking, Subversion or GitHub as repositories, 
             Jenkins/Hudson for builds, Selenium and SonarQube for quality, uDeploy and Jenkins for deployment. 
             More plugins are available. </p>
@@ -154,19 +154,156 @@ slug: getting_started
 
 <h3 id="db_layer" class="page-header">Database Layer</h3>  
 <p>Hygieia uses MongoDB as the database for storage and retrieval of data.</p>
-
 <!--End New Content-->
-  
+
+<!-- Edit existing content-->
   
 <!-- Hygieia Set up -->
 
-<h3 id="installation_prerequisites" class="page-header">Installation Prerequisites</h3>
-
-  <h2 id="setup_instructions" class="page-header">
+<h2 id="setup_instructions" class="page-header">
       <a class="anchorjs-link " href="#setup_instructions" aria-label="Anchor link for: setup_instructions" data-anchorjs-icon=""
       style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal;
       position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Setup Instructions
-  </h2>
+</h2>
+
+  <h3 id="installation_prerequisites" class="page-header">Installation Prerequisites</h3>
+    <p> Before setting up Hygieia, ensure that the following software are installed: </p>
+      <ul> 
+        <li> Maven </li>
+        <li> Java JRE </li>
+        <li> Git </li>
+        <li> Java JRE </li>
+       </ul>
+<h3 id="Choose a Setup" class="page-header">Choose a Setup</h3>
+<p> Hygieia can be installed and configured as:</p>
+<ul>
+  <li> Desktop Version - Install Hygieia and operationalize the DevOps dashboard for your application. </li>
+  <li> nterprise Version - Install Hygieia at a central location for project teams to create a dashboard for each branch/project. </li>
+ </ul>
+<p> Hygieia supports different Operating Systems to install and configure the DevOps dashboard as Desktop or Enterprise version:</p>
+ <ul>
+   <li> MAC OS X </li>
+   <li> Windows </li>
+   <li> Ubuntu </li>
+   <li> Red Hat Enterprise Linux (RHEL)
+  </ul>
+<h3 id="environment_details" class="page-header">Environment Details</h3>
+
+<h4 id="software_support_matrix" class="page-header">Software Support Matrix </h4>
+
+<!-- Table text test-->
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="208">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td valign="top" width="208">
+<p><strong>Software</strong></p>
+</td>
+<td valign="top" width="208">
+<p><strong>Supported Versions</strong></p>
+</td>
+</tr>
+<tr>
+<td rowspan="4" valign="top" width="208">
+<p><strong>Code Repository</strong></p>
+</td>
+<td valign="top" width="208">
+<p>GitHub</p>
+</td>
+<td valign="top" width="208">
+<p>GitHub Enterprise 2.5</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="208">
+<p>Subversion</p>
+</td>
+<td valign="top" width="208">
+<p>version 1.5.2 (r32768)</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="208">
+<p>Gitlab</p>
+</td>
+<td valign="top" width="208">
+<p>Gitlab 9.2.5</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="208">
+<p>Bitbucket</p>
+</td>
+<td valign="top" width="208">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" valign="top" width="208">
+<p><strong>Deployment Tools</strong></p>
+</td>
+<td valign="top" width="208">
+<p>UDeploy</p>
+</td>
+<td valign="top" width="208">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="208">
+<p>XL Deploy</p>
+</td>
+<td valign="top" width="208">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="208">
+<p><strong>Database</strong></p>
+</td>
+<td valign="top" width="208">
+<p>MongoDB</p>
+</td>
+<td valign="top" width="208">
+<p>MongoDB 3.2.11</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" valign="top" width="208">
+<p><strong>Feature Management</strong></p>
+</td>
+<td valign="top" width="208">
+<p>JIRA</p>
+</td>
+<td valign="top" width="208">
+<p>JIRA v7.2.8</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="208">
+<p>VersionOne</p>
+</td>
+<td valign="top" width="208">
+<p>Ultimate Edition v.17.0.6.20</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="208">
+<p><strong>Java</strong></p>
+</td>
+<td valign="top" width="208">
+<p>JDK</p>
+</td>
+<td valign="top" width="208">
+<p>JDK 1.8.0_131</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="supported_browsers" class="page-header">Supported Browsers</h4>
 
   <p style="text-align:justify;">The following components are required to run Hygieia℠</p>
   <ul>
