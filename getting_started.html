@@ -355,17 +355,39 @@ slug: getting_started
 <p style="text-align:justify;">The following components are required to run Hygieia℠</p>
   <ul>
     <li><a href="#database">Database</a></li>
-    <li><a href="#ui_layer">UI Layer</a></li>
-    <li><a href="#api_layer">API Layer</a></li>
     <li><a href="#tool_collectors">Tool Collectors</a></li>
-    <li><a href="#plugin_webhook">Plugin WebHook</a></li>
+    <li><a href="#api_layer">API Layer</a></li>
+    <li><a href="#ui_layer">UI Layer</a></li>
+    <li><a href="#plugin_webhook">Plugins/WebHook</a></li>
   </ul>
 
   <h3 id="database" class="page-header">Database</h3>
-  <p >Hygieia uses MongoDB 3.0 + version. We recommend that you download MongoDB clients(RoboMongo etc) to connect to your local running Database and
-      make sure that database: dashboard is created and you are successfully able to connect to it.</p>
-  <ul>
-    <li><a href="https://www.mongodb.org/downloads#previous">MongoDB Download and  Install instructions </a></li>
+  <p> Hygieia uses MongoDB 3.0 + version. We recommend that you download MongoDB clients(RoboMongo etc) 
+      to connect to your local running Database and
+      make sure that database: dashboard is created and you are successfully able to connect to it.
+  </p>
+
+
+<h4 class="page-header">Download and Install Instructions</h4>
+
+<p> To download MongoDB, follow the instructions <a href="https://www.mongodb.org/downloads#previous">here</a></p>
+
+<h4 class="page-header">Configuration Steps</h4>
+
+<p> To configure MongoDB, go to the bin directory of your mongodb installation and run the following command to start MongoDB.
+  Ensure the data directory already exists at the target location. 
+<pre code>
+  mongod --dbpath [path to the data directory] 
+  </pre code><br>
+      <p >For example,
+<pre code>
+  /usr/bin/mongodb-linux-x86_64-2.6.3/bin/mongod --dbpath /dev/data/db </pre code></p>
+
+
+
+<!-- Old DB Content
+<ul>
+    <li><a href="https://www.mongodb.org/downloads#previous">MongoDB Download and Install instructions</a></li>
     <li>Configure MongoDB</li>
     <ul>
       <li>Go to the bin directory of your mongodb installation and run the following command to start the mongodb do make sure that data directory should pre-exist at the target location </li>
@@ -401,6 +423,8 @@ slug: getting_started
       }</pre code>
         </ul>
       </ul>
+ 
+End old DB content-->
 
       <h3 id="ui_layer" class="page-header">
           UI Layer
