@@ -12,7 +12,7 @@ slug: getting_started
    <h2  class="page-header">
     <a class="anchorjs-link " href="#introduction_to_hygieia" aria-label="Anchor link for: introduction_to_hygieia" data-anchorjs-icon=""
     style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal;
-    position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>introduction_to_hygieia
+    position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Introduction to Hygieia
   </h2>
   
   <h3 id="toc" class="page-header">Contents</h3>
@@ -363,12 +363,11 @@ slug: getting_started
     <li><a href="#plugin_webhook">Plugins/WebHook</a></li>
   </ul>
 
-  <h3 id="database" class="page-header">Database</h3>
-  <p> Hygieia uses MongoDB 3.0 + version. We recommend that you download MongoDB clients(RoboMongo etc) 
-      to connect to your local running Database and
-      make sure that database: dashboard is created and you are successfully able to connect to it.
+  <h3 id="database" class="page-header">Database Configuration</h3>
+  <p> Hygieia uses MongoDB (version 3.0 and above) as the database for storage and retrieval of data. 
+    It is recommended to download any MongoDB GUI 
+    client (for example, Robo 3T) to create the database dashboard and successfully connect to it.
   </p>
-
 
 <h4 class="page-header">Download and Install Instructions</h4>
 
@@ -376,7 +375,21 @@ slug: getting_started
 
 <h4 class="page-header">Configuration Steps</h4>
 
-<p> To configure MongoDB, go to the bin directory of your mongodb installation and run the following command to start MongoDB.
+<p> To configure MongoDB: </p>
+  <ol>
+    <li> Create data directory at the target location. </li>
+    For example: /dev/data/db
+    
+    <li> Go to the /bin directory of your MongoDB installation. 
+      
+      
+      
+      In the CLI, run the following command to start MongoDB
+      
+      mongod --dbpath 
+    
+    
+  go to the bin directory of your mongoDB installation and run the following command to start MongoDB.
   Ensure the data directory already exists at the target location. 
 <pre code>
   mongod --dbpath [path to the data directory] 
