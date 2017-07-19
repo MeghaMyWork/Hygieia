@@ -22,7 +22,7 @@ slug: ui
     ...
 &lt;/project&gt;</code></pre>
 <p>The pom file includes all of the dependencies you will need to interact with the Dashboard Application MongoDB instance, such as Model classes and Repositories.</p>
-<h3 class="page-header">Extending Collector</h3>
+<h3 class="page-header">Extend the Collector</h3>
 <p>If you need to store extra configuration for your collector, you can create a class that extends Collector and add new fields to store configuration information that is specific to your collector.</p>
 <pre><code>package com.capitalone.dashboard.collector;
 
@@ -49,7 +49,7 @@ import com.capitalone.dashboard.model.PivotalTrackerCollector;
 
 public interface PivotalTrackerCollectorRepository extends BaseCollectorRepository&lt;PivotalTrackerCollector&gt; {
 }</code></pre>
-<h3 class="page-header">Extending CollectorItem</h3>
+<h3 class="page-header">Extend CollectorItem</h3>
 <p>Create a class that extends CollectorItem and add new fields to store information that identifies a unique item within the tool. In the Pivotal Tracker example, we will add a projectId field to CollectorItem so that each project’s features can be tracked.</p>
 <pre><code>package com.capitalone.dashboard.collector;
 
